@@ -31,6 +31,14 @@ This project includes two SQL + Power BI data analyses focused on improving inte
   - Screenshots of SQL result tables  
 - `README.md` – This file (project overview and guide)
 
+## 📊 Power BI Dashboards
+
+### 🧪 Lab Data Dashboard
+![Lab Dashboard](./dashboards/Office Dashboard.png)
+
+### 🧾 Internal Task Workflow Dashboard
+![Internal Dashboard](./dashboards/Lab Dashboard.png)
+
 
 
 
