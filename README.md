@@ -20,7 +20,7 @@ This project includes two SQL + Power BI data analyses focused on improving inte
 
 ---
 
-## 📁 Files
+##Files
 
 - `queries.sql` – SQL code used to answer all analytical questions, written in PostgreSQL  
 - `dashboards/` – Screenshots of Power BI dashboards built for this project  
