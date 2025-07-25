@@ -1,1 +1,0 @@
-ShelfTimeStatus = IF('Office2025'[ShelfTimeHours] < 24, "On Time", "Delayed")
