@@ -1,5 +1,0 @@
-ShelfTimeHours = 
-VAR Complete = 'Office2025'[CompletionDateTimeCS]
-VAR Pickup = 'Office2025'[PickupDateTimePC]
-RETURN
-    DATEDIFF(Complete, Pickup, MINUTE) / 60.0
