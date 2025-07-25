@@ -1,0 +1,10 @@
+TATWorkdayOffice = 
+VAR StartDate = MIN('Office2025'[CompletionDateTimeCS])
+VAR EndDate = MAX('Office2025'[PickupDateTimePC])
+RETURN
+    CALCULATE (
+        COUNTROWS ( DateTable ),
+        DateTable[Date] >= StartDate &&
+        DateTable[Date] <= EndDate &&
+        DateTable[IsWorkday] = TRUE()
+    )

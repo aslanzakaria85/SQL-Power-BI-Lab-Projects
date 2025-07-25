@@ -1,0 +1,32 @@
+DateTable = 
+VAR HolidayList = {
+    DATE(2024, 1, 1),
+    DATE(2024, 12, 25),
+    DATE(2024, 11, 28),
+    DATE(2025, 1, 1)
+}
+RETURN
+ADDCOLUMNS (
+    CALENDAR (DATE(2022, 1, 1), DATE(2025, 12, 31)),
+    "IsWeekend", WEEKDAY([Date], 2) > 5,
+    "IsHoliday", 
+        VAR CurrentDate = [Date]
+        RETURN COUNTROWS (
+            FILTER ( HolidayList, CurrentDate = [Value] )
+        ) > 0,
+    "IsWorkday",
+        VAR CurrentDate = [Date]
+        VAR IsWeekend = WEEKDAY(CurrentDate, 2) > 5
+        VAR IsHoliday = 
+            COUNTROWS (
+                FILTER ( HolidayList, CurrentDate = [Value] )
+            ) > 0
+        RETURN NOT (IsWeekend || IsHoliday),
+    
+    
+    "Year", YEAR([Date]),
+    "MonthNumber", MONTH([Date]),
+    "MonthName", FORMAT([Date], "MMMM"),
+    "YearMonth", FORMAT([Date], "YYYY-MM"),
+    "YearMonthSort", YEAR([Date]) * 100 + MONTH([Date])
+)

@@ -1,0 +1,1 @@
+Recieved_to_prepared_time(Hours) = DATEDIFF('Lab2025'[Received(T)], 'Lab2025'[Prepared(T)],HOUR)
