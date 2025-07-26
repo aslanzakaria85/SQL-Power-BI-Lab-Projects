@@ -8,7 +8,7 @@ One analysis focuses on lab sample processing, and the other on internal task ha
 ## Projects Included
 
 ### Lab Data Analysis
-- Analyzed turnaround times (TAT)
+- Analyzed turnaround time (TAT)
 - Identified delays by client, method, and instrument
 - Tracked staff workload in prep, extraction, and reporting
 - Visualized weekly trends of sample intake
@@ -16,21 +16,23 @@ One analysis focuses on lab sample processing, and the other on internal task ha
 ### Internal Task Workflow
 - Measured task completion times
 - Analyzed employee workload distribution
-- Compared rush jobs vs. normal processing
+- Compared rush jobs vs. normal jobs
 - Visualized task throughput and bottlenecks
 
 ---
 
-## File Structure
 
-- `queries.sql` – SQL code used to answer all analysis questions (PostgreSQL)
-- `dashboards/` – Power BI dashboard screenshots
-- `screenshots/` – SQL query result screenshots
-- `project_report.pdf` – Full Q&A document, including:
-  - Business questions
-  - SQL queries
-  - Result screenshots
-- `README.md` – Project overview (this file)
+## Folder Structure
+
+| Folder/File | Description |
+|-------------|-------------|
+| `dashboard_screenshots/` | Visual snapshots of the dashboards |
+| `dashboard_explanations/` | General explanation of each dashboard |
+| `dax_codes_and_explanations/` | DAX logic with explanations and purpose |
+| `queries/` | SQL scripts used in the analysis |
+| `sql_result_screenshots/` | Screenshots of query outputs |
+| `model_documentation/` | Power BI data model, relationships, and rationale |
+| `README.md` | Project overview (this file) |
 
 ---
 
@@ -42,6 +44,15 @@ One analysis focuses on lab sample processing, and the other on internal task ha
 ### Internal Task Workflow Dashboard  
 ![Internal Dashboard](./dashboards/Lab%20Dashboard.png)
 
+---
 
+## Tools Used
+
+- Power BI for dashboards and visual analysis
+- DAX for calculated columns and KPIs
+- PostgreSQL for writing and running SQL queries
+- Excel as a supporting data source
+
+---
 
 
