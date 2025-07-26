@@ -39,7 +39,7 @@ One analysis focuses on lab sample processing, and the other on internal task ha
 ## Power BI Dashboards
 
 ### Lab Data Dashboard  
-![Lab Dashboard](./dashboards/Office%20Dashboard.png)
+![Lab Dashboard](./dashboard_explanations/dashboard_1.md)
 
 ### Internal Task Workflow Dashboard  
 ![Internal Dashboard](./dashboards/Lab%20Dashboard.png)
