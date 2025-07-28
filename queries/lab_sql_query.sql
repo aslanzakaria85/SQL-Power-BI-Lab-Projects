@@ -1,9 +1,6 @@
 ###Lab Data Questions:
 
--- Question 1: What is the average TAT for all folders? 
 
-SELECT AVG(reported - received) AS avg_tat_days
-FROM lab1
 
 
 -- Question 2: Which client has the highest number of late reports?
@@ -41,19 +38,6 @@ FROM lab1
 WHERE reported > due_date
 
 
--- Question 6: What is the average delay for late jobs? 
-
-SELECT AVG(reported - due_date) AS avg_delay_days
-FROM lab1
-WHERE reported > due_date
-
-
--- Question 7: What's the weekly trend of the number of folders received?\
-
-SELECT DATE_TRUNC('week', received) AS week_start, COUNT(*) AS num_folders
-FROM lab1
-GROUP BY week_start
-ORDER BY week_start
 
 
 -- Question 8: Which instrument is associated with the longest average TAT? 
@@ -65,10 +49,3 @@ ORDER BY avg_tat_days DESC
 LIMIT 4
 
 
--- Question 9: Who reports the most folders?
-
-SELECT reported_by, COUNT(*) AS report_count
-FROM lab1
-GROUP BY reported_by
-ORDER BY report_count DESC
-LIMIT 1
